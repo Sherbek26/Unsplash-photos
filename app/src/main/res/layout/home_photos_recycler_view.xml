@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:riv_corner_radius="18dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/just_photos"
+            android:scaleType="centerCrop"
+            android:id="@+id/image"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="30dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="8dp">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/just_person"
+                app:riv_corner_radius="18dp"
+                android:id="@+id/profile_img"/>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="Andrew Tate"
+                android:textColor="@color/white"
+                android:fontFamily="@font/inter"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/owner_name"/>
+
+        </LinearLayout>
+
+
+</FrameLayout>

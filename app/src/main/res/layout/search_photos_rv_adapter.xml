@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:riv_corner_radius="18dp"
+        android:src="@drawable/just_photos"
+        android:scaleType="centerCrop"
+        android:id="@+id/image"/>
+
+
+
+</FrameLayout>

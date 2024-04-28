@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    app:riv_corner_radius="18dp"
+    android:src="@drawable/just_photos"
+    android:scaleType="centerCrop"
+    android:id="@+id/image"/>
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/heart_red"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="18dp"
+        />
+
+</FrameLayout>

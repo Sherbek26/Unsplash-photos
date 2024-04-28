@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    style="@style/AppTheme"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <View
+        android:layout_width="65dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_bottom_sheet_view"
+        android:layout_marginTop="12dp"
+        android:id="@+id/sheet_stick"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Set as Lock Screen"
+        android:paddingStart="16dp"
+        android:gravity="start"
+        android:textAllCaps="false"
+        android:fontFamily="@font/inter"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@+id/sheet_stick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/lock_screen"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set as Home Screen"
+        android:paddingStart="16dp"
+        android:gravity="start"
+        android:textAllCaps="false"
+        android:fontFamily="@font/inter"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@+id/lock_screen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/home_screen"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set as both"
+        android:paddingStart="16dp"
+        android:gravity="start"
+        android:textAllCaps="false"
+        android:fontFamily="@font/inter"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@+id/home_screen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/both_screen"
+        android:layout_marginBottom="52dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
